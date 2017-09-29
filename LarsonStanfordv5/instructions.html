@@ -1,6 +1,6 @@
 <!--
   KeyShot VR
-  (c) Copyright 2012-2014 Luxion ApS - All Rights Reserved.
+  (c) Copyright 2012-2016 Luxion ApS - All Rights Reserved.
 
   Instructions for deploying KeyShotVR to a website and sharing via email.
 -->
@@ -30,7 +30,7 @@
       .overlay {
         position: absolute;
         display: inline-block;
-        width: 692px; /* same width as iframe below */
+        width: 643px; /* same width as iframe below */
         height: 922px; /* same height as iframe below */
         pointer-events: none;
       }
@@ -46,38 +46,37 @@
   </head>
   <body>
     <h2>Instructions for sharing KeyShotVR</h2>
-    <p>Below is your KeyShotVR. To view the KeyShotVR by itself open the <i><a href="LarsonStanfordv5.html">LarsonStanfordv5.html</a></i> file in the <i>LarsonStanfordv5</i> folder.</p>
-    <div style="max-width: 692px; max-height: 922px;">
-    <div class="overlay" id="overlay">&nbsp;</div>
-    <div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 133.237%;">
-      <iframe src="LarsonStanfordv5.html"
-              allowfullscreen
-              style="top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;" 
-              frameborder="0"
-              scrolling="no">
-      </iframe>
+    <p>Below is your KeyShotVR. To view the KeyShotVR by itself open the <i><a href="LarsonStanfordV5.html">LarsonStanfordV5.html</a></i> file in the <i>LarsonStanfordV5</i> folder.</p>
+    <div style="max-width: 643px; max-height: 922px;">
+      <div class="overlay" id="overlay">&nbsp;</div>
+      <div style="left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 143.39%; overflow: hidden;">
+        <iframe src="LarsonStanfordV5.html"
+                allowfullscreen
+                style="position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;"
+                frameborder="0"
+                scrolling="no">
+        </iframe>
+      </div>
     </div>
-    </div>
-    <h2>Uploading to your web site:</h2>
-    <p>Upload the LarsonStanfordv5 folder and LarsonStanfordv5.html to your webserver. 
-    Make sure when uploading the folder <br>and html file that your html file is located
-    in the same directory as the "files" folder inside LarsonStanfordv5.
-    <br>Copy/Paste the code below to your webpage.
+    <h2>Uploading to and displaying on your website:</h2>
+    <p>Upload the 'LarsonStanfordV5' folder with all of its contents to your webserver. Copy
+    (Ctrl-C/Cmd-C) and Paste (Ctrl-V/Cmd-V) the code below to your webpage.
     <br>
     <br>
     <b>[Code]:</b>
-    <pre class="code"> &lt;<span class="c-tag">div</span> style=<span class="c-attribute">"max-width: 692px; max-height: 922px;"</span>&gt;
-    &lt;<span class="c-tag">div</span> style=<span class="c-attribute">"left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 133.237%;"</span>&gt;
-      &lt;<span class="c-tag">iframe</span> src=<span class="c-attribute">"LarsonStanfordv5.html"</span>
-                   allowfullscreen
-                   style=<span class="c-attribute">"top: 0px; left: 0px; width: 100%; height: 100%; position: absolute;"</span> 
-                   frameborder=<span class="c-attribute">"0"</span>
-                   scrolling=<span class="c-attribute">"no"</span>&gt;
-      &lt;/<span class="c-tag">iframe</span>&gt;
+    <pre class="code">&lt;<span class="c-tag">div</span> style=<span class="c-attribute">"max-width: 643px; max-height: 922px;"</span>&gt;
+  &lt;<span class="c-tag">div</span> style=<span class="c-attribute">"left: 0px; width: 100%; height: 0px; position: relative; padding-bottom: 143.39%; overflow: hidden;"</span>&gt;
+    &lt;<span class="c-tag">iframe</span> src=<span class="c-attribute">"LarsonStanfordV5.html"</span>
+                 allowfullscreen
+                 style=<span class="c-attribute">"position: absolute; top: 0px; left: 0px; height: 100%; width: 1px; min-width: 100%; *width: 100%;"</span>
+                 frameborder=<span class="c-attribute">"0"</span>
+                 scrolling=<span class="c-attribute">"no"</span>&gt;
+    &lt;/<span class="c-tag">iframe</span>&gt;
   &lt;/<span class="c-tag">div</span>&gt;
 &lt;/<span class="c-tag">div</span>&gt;</pre>
     </p>
-    <p>If you are sharing via email. You will need to send the entire zipped <i>LarsonStanfordv5</i> folder to the end recipient.</p>
+    <p>If you share your KeyShotVR via email, send the entire zipped 'LarsonStanfordV5' folder
+    to the recipient(s).</p>
    <script>
    // In cases where the mouse is in a drag state and dragged
    // outside of the iframe the event is still activated
