@@ -20,16 +20,16 @@
       function initKeyShotXR() {
         var nameOfDiv = "KeyShotXR";
         var folderName = "MtVernonV3";
-        var viewPortWidth = 800;
-        var viewPortHeight = 1066;
+        var viewPortWidth = 768;
+        var viewPortHeight = 1024;
         var backgroundColor = "#FFFFFF";
-        var uCount = 18;
+        var uCount = 24;
         var vCount = 1;
         var uWrap = true;
         var vWrap = false;
-        var uMouseSensitivity = -0.05;
+        var uMouseSensitivity = -0.0666667;
         var vMouseSensitivity = 1;
-        var uStartIndex = 9;
+        var uStartIndex = 12;
         var vStartIndex = 0;
         var minZoom = 1;
         var maxZoom = 1;
@@ -44,8 +44,9 @@
         var uReverse = false;
         var vReverse = false;
         var hotspots = {};
+        var isIBooksWidget = false;
         
-        keyshotXR = new keyshotXR(nameOfDiv,folderName,viewPortWidth,viewPortHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,downloadOnInteraction,imageExtension,showLoading,loadingIcon,allowFullscreen,uReverse,vReverse,hotspots);
+        keyshotXR = new keyshotXR(nameOfDiv,folderName,viewPortWidth,viewPortHeight,backgroundColor,uCount,vCount,uWrap,vWrap,uMouseSensitivity,vMouseSensitivity,uStartIndex,vStartIndex,minZoom,maxZoom,rotationDamping,downScaleToBrowser,addDownScaleGUIButton,downloadOnInteraction,imageExtension,showLoading,loadingIcon,allowFullscreen,uReverse,vReverse,hotspots,isIBooksWidget);
       }
 
       window.onload = initKeyShotXR;
